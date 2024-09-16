@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(Assets/background.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+    margin: 30px 0 ;
+    color: rgba(0, 0, 0, 0.74);
+}
+@keyframes translate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(23%);
+    }
+    75% {
+        transform: translateX(-23%);
+    }
+}
+.hero-section p {
+    animation-name: translate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 70%;
+    margin: 0 auto 30px;
+    padding: 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.74);
+}
+form {
+    background-color: rgba(0, 0, 0, 0.11);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.74);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+form .choose input {
+    display: none;
+}
+form .choose label {
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+form .choose label:hover {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgba(0, 0, 0, 0.842);
+}
+form button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: .2s;
+}
+form button:hover {
+    font-size: 18px;
+}
+#result {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}

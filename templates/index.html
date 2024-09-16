@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petpicks</title>
+    <link rel="icon" href="../static/css/Assets/pets.png">
+    <!-- this is the link to the css file -->
+    <link rel="stylesheet" href= "../static/css/style.css" >  
+</head>
+<body>
+    <h1>PetPicks App</h1>
+    <div class="hero-section">
+        <p> This is a simple web app that uses a pre-trained model to classify images of cats and dogs.</p>
+    </div>
+    <form id="upload-form">
+        <div class="choose">
+            <input type="file" name="file" id="file" accept="image/*" required>
+            <label for= "file">Choose a File</label>
+        </div>
+        <button type="submit">Classify</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
